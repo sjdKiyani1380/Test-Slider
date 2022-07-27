@@ -1,4 +1,5 @@
 import React from 'react'
+import  Slider  from '../slider/Slider'
 import './home.css'
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
         <div className='container' >
             <div className='banner' ></div>
             <div className='slider' >
-                component slider
+                <Slider/>
             </div>
         </div>
     </div>
