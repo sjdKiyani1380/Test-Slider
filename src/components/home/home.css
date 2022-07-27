@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Elham';
+    src: url('../../fonts/Elham.eot') format('eot'),  
+         url('../../fonts/Elham.woff') format('woff'),
+         url('../../fonts/Elham.ttf') format('truetype');  
+    font-style:normal;
+    font-weight:normal;
+}
+
+*{
+    font-family: Elham;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner{
+    width: 70%;
+
+}
+.slider{
+    width: 20%;
+}
