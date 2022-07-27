@@ -10,10 +10,25 @@ export const SliderContainer = styled.nav`
   padding-bottom: 0;
   text-align: center;
   box-shadow: 0px -7px 0px 0px rgb(0,0,255);  
+  @media screen and (max-width: 1000px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    
+    > ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
 `;
 
 export const ContainerLogo = styled.div`
   position: relative;
+  @media screen and (max-width:1000px){
+    display:none;
+  }
 `;
 
 export const ImgLogo = styled.img`
@@ -23,7 +38,11 @@ export const ImgLogo = styled.img`
     height: 50%;
     border-radius: 50%;
     left: 25%;
-}
+
+    @media screen and (max-width:1000px){
+        display:none;
+    }
+
 `;
 
 export const SearchIcon = styled(ImSearch)`
@@ -55,6 +74,9 @@ export const TitleSlider = styled.h2`
   padding: 0 0 5px 0;
   border-bottom: 1px solid black;
   margin: 0 20px 0 20px;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const Li = styled.li`
@@ -97,9 +119,37 @@ export const Li = styled.li`
     font-size: 18px;
     text-decoration:none;
   }
+
+  @media screen and (max-width: 1000px) {
+    border: none;
+    flex-direction: column-reverse;
+    gap: 10px 0;
+
+    &:hover {
+      > span {
+        display: none;
+      }
+      > svg {
+        top: -58px;
+        background-color: orangered;
+        padding: 20px;
+        position: absolute;
+        border-radius: 50%;
+        border: 7px solid white;
+        color: white;
+      }
+      >a{
+        color:orangered;
+      }
+    }
+  }
 `;
 
-export const DivUlStarIcon = styled.div``
+export const DivUlStarIcon = styled.div`
+@media screen and (max-width:1000px){
+    display:none;
+  }
+`
 
 export const UlStarIcon = styled.ul`
   display: flex;
